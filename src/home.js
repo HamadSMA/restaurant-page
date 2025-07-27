@@ -1,6 +1,6 @@
 import pepperImage from "./imgs/hot-pepper.jpg";
 
-export const heroSection = function () {
+export const home = function () {
   const contentDiv = document.querySelector("#content");
 
   const heading = document.createElement("h1");
@@ -13,5 +13,6 @@ export const heroSection = function () {
   const img = document.createElement("img");
   img.setAttribute("src", pepperImage);
 
+  contentDiv.innerHTML = "";
   contentDiv.append(heading, paragraph, img);
 };
